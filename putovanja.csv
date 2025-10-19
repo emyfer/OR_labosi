@@ -1,0 +1,26 @@
+drzava,glavni_grad,jezik,trajanje_putovanja,valuta,godina_posjete,tip_putovanja,prijevoz,ocjena,broj_stanovnika,grad_naziv,broj_stanovnika,aktivnost
+Engleska,London,engleski,7,funte,2024,samostalno,avion,10,69671987,London,8900000,Mjuzikl
+Engleska,London,engleski,7,funte,2024,samostalno,avion,10,69671987,Brighton,290000,Fish and Chips
+Austrija,Beč,njemački,3,euro,2022,agencija,autobus,6,9113574,Beč,1900000,Advent
+Austrija,Beč,njemački,3,euro,2022,agencija,autobus,6,9113574,Graz,330000,Šoping
+Austrija,Beč,njemački,3,euro,2022,agencija,autobus,6,9113574,Linz,205000,Torta Sacher
+Italija,Rim,talijanski,3,euro,2025,samostalno,avion,7,58989749,Pisa,90000,Kosi toranj
+Italija,Rim,talijanski,3,euro,2025,samostalno,avion,7,58989749,Florenca,380000,Muzej Uffizi
+Belgija,Brisel,francuski,4,euro,2024,samostalno,avion,8,11764398,Brisel,120000,More
+Belgija,Brisel,francuski,4,euro,2024,samostalno,avion,8,11764398,Oostende,70000,More
+Crna Gora,Podgorica,crnogorski,5,euro,2024,samostalno,avion,9,631041,Podgorica,200000,Vodopad
+Crna Gora,Podgorica,crnogorski,5,euro,2024,samostalno,avion,9,631041,Tivat,15000,Razgledavanje
+Crna Gora,Podgorica,crnogorski,5,euro,2024,samostalno,avion,9,631041,Kotor,23000,Cable car
+Crna Gora,Podgorica,crnogorski,5,euro,2024,samostalno,avion,9,631041,Budva,18000,Ručak
+Mađarska,Budimpešta,mađarski,2,forinte,2022,agencija,auto,5,9619184,Budimpešta,1750000,Advent
+Češka,Prag,češki,4,krune,2025,samostalno,autobus,10,10570801,Prag,1300000,Koncert
+Francuska,Paris,francuski,4,euro,2023,agencija,avion,8,66680404,Lile,233000,Izlet vlakom
+Francuska,Paris,francuski,4,euro,2023,agencija,avion,8,66680404,Marseille,870000,Sajam
+Francuska,Paris,francuski,4,euro,2023,agencija,avion,8,66680404,Nice,340000,Sviranje klavira
+Francuska,Paris,francuski,4,euro,2023,agencija,avion,8,66680404,Cannes,74000,Besplatni sladoled
+Španjolska,Madrid,španjolski,6,euro,2025,agencija,autobus,10,47889958,Barcelona,1600000,Plaža i pizza
+Španjolska,Madrid,španjolski,6,euro,2025,agencija,autobus,10,47889958,Montserrat,10000,Samostan
+Slovenija,Ljubljana,slovenski,7,euro,2023,samostalno,auto,8,2116599,Ljubljana,295000,Penjanje na brdo
+Slovenija,Ljubljana,slovenski,7,euro,2023,samostalno,auto,8,2116599,Maribor,95000,Advent
+Slovenija,Ljubljana,slovenski,7,euro,2023,samostalno,auto,8,2116599,Koper,25000,Plaža
+Slovenija,Ljubljana,slovenski,7,euro,2023,samostalno,auto,8,2116599,Piran,4500,Razgledavanje
