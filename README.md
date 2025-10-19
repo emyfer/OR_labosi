@@ -2,7 +2,7 @@
 
 Skup otvorenih podataka na temu posjećenih država
 
-- licenca: Creative Commons 
+- Creative Commons 1.0 license
 - Ema Bradić
 - verzija 1.0 za 1. labaratorijsku vježbu
 - jezik podataka: hrvatski
