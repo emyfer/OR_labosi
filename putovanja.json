@@ -1,0 +1,292 @@
+[
+  {
+    "jezik": "talijanski",
+    "naziv": "Italija",
+    "ocjena": 7,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "Kosi toranj",
+        "grad_naziv": "Pisa",
+        "broj_stanovnika": 90000
+      },
+      {
+        "aktivnost": "Muzej Uffizi",
+        "grad_naziv": "Florenca",
+        "broj_stanovnika": 380000
+      },
+      {
+        "aktivnost": "Samostan",
+        "grad_naziv": "Montserrat",
+        "broj_stanovnika": 10000
+      }
+    ],
+    "prijevoz": "avion",
+    "glavni_grad": "Rim",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2025,
+    "broj_stanovnika": 58989749,
+    "trajanje_putovanja": 3
+  },
+  {
+    "jezik": "francuski",
+    "naziv": "Belgija",
+    "ocjena": 8,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "More",
+        "grad_naziv": "Brisel",
+        "broj_stanovnika": 120000
+      },
+      {
+        "aktivnost": "More",
+        "grad_naziv": "Oostende",
+        "broj_stanovnika": 70000
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Lile",
+        "broj_stanovnika": 0
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Marseille",
+        "broj_stanovnika": 870000
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Nice",
+        "broj_stanovnika": 340000
+      },
+      {
+        "aktivnost": "Sladoled",
+        "grad_naziv": "Cannes",
+        "broj_stanovnika": 74000
+      }
+    ],
+    "prijevoz": "avion",
+    "glavni_grad": "Brisel",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2024,
+    "broj_stanovnika": 11764398,
+    "trajanje_putovanja": 4
+  },
+  {
+    "jezik": "mađarski",
+    "naziv": "Mađarska",
+    "ocjena": 5,
+    "valuta": "forinte",
+    "gradovi": [
+      {
+        "aktivnost": "Advent",
+        "grad_naziv": "Budimpešta",
+        "broj_stanovnika": 1750000
+      }
+    ],
+    "prijevoz": "auto",
+    "glavni_grad": "Budimpešta",
+    "tip_putovanja": "agencija",
+    "godina_posjete": 2022,
+    "broj_stanovnika": 9619184,
+    "trajanje_putovanja": 2
+  },
+  {
+    "jezik": "slovenski",
+    "naziv": "Slovenija",
+    "ocjena": 8,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "",
+        "grad_naziv": "Ljubljana",
+        "broj_stanovnika": 295000
+      },
+      {
+        "aktivnost": "Advent",
+        "grad_naziv": "Maribor",
+        "broj_stanovnika": 95000
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Koper",
+        "broj_stanovnika": 25000
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Piran",
+        "broj_stanovnika": 4500
+      }
+    ],
+    "prijevoz": "auto",
+    "glavni_grad": "Ljubljana",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2023,
+    "broj_stanovnika": 2116599,
+    "trajanje_putovanja": 7
+  },
+  {
+    "jezik": "crnogorski",
+    "naziv": "Crna Gora",
+    "ocjena": 9,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "",
+        "grad_naziv": "Podgorica",
+        "broj_stanovnika": 200000
+      },
+      {
+        "aktivnost": "",
+        "grad_naziv": "Tivat",
+        "broj_stanovnika": 15000
+      },
+      {
+        "aktivnost": "Cable car",
+        "grad_naziv": "Kotor",
+        "broj_stanovnika": 23000
+      },
+      {
+        "aktivnost": "Ručak",
+        "grad_naziv": "Budva",
+        "broj_stanovnika": 18000
+      }
+    ],
+    "prijevoz": "avion",
+    "glavni_grad": "Podgorica",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2024,
+    "broj_stanovnika": 631041,
+    "trajanje_putovanja": 5
+  },
+  {
+    "jezik": "španjolski",
+    "naziv": "Španjolska",
+    "ocjena": 10,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "Plaža i pizza",
+        "grad_naziv": "Barcelona",
+        "broj_stanovnika": 1600000
+      },
+      {
+        "aktivnost": "Samostan",
+        "grad_naziv": "Montserrat",
+        "broj_stanovnika": 10000
+      }
+    ],
+    "prijevoz": "autobus",
+    "glavni_grad": "Madrid",
+    "tip_putovanja": "agencija",
+    "godina_posjete": 2025,
+    "broj_stanovnika": 47889958,
+    "trajanje_putovanja": 6
+  },
+  {
+    "jezik": "francuski",
+    "naziv": "Francuska",
+    "ocjena": 8,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "Izlet vlakom",
+        "grad_naziv": "Lile",
+        "broj_stanovnika": 233000
+      },
+      {
+        "aktivnost": "Sajam",
+        "grad_naziv": "Marseille",
+        "broj_stanovnika": 870000
+      },
+      {
+        "aktivnost": "Sviranje klavira",
+        "grad_naziv": "Nice",
+        "broj_stanovnika": 340000
+      },
+      {
+        "aktivnost": "Besplatni sladoled",
+        "grad_naziv": "Cannes",
+        "broj_stanovnika": 74000
+      }
+    ],
+    "prijevoz": "avion",
+    "glavni_grad": "Paris",
+    "tip_putovanja": "agencija",
+    "godina_posjete": 2023,
+    "broj_stanovnika": 66680404,
+    "trajanje_putovanja": 4
+  },
+  {
+    "jezik": "engleski",
+    "naziv": "Engleska",
+    "ocjena": 10,
+    "valuta": "funte",
+    "gradovi": [
+      {
+        "aktivnost": "Mjuzikl",
+        "grad_naziv": "London",
+        "broj_stanovnika": 8900000
+      },
+      {
+        "aktivnost": "Fish and Chips",
+        "grad_naziv": "Brighton",
+        "broj_stanovnika": 290000
+      }
+    ],
+    "prijevoz": "avion",
+    "glavni_grad": "London",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2024,
+    "broj_stanovnika": 69671987,
+    "trajanje_putovanja": 7
+  },
+  {
+    "jezik": "njemački",
+    "naziv": "Austrija",
+    "ocjena": 6,
+    "valuta": "euro",
+    "gradovi": [
+      {
+        "aktivnost": "Advent",
+        "grad_naziv": "Beč",
+        "broj_stanovnika": 1900000
+      },
+      {
+        "aktivnost": "Šoping",
+        "grad_naziv": "Graz",
+        "broj_stanovnika": 330000
+      },
+      {
+        "aktivnost": "Torta Sacher",
+        "grad_naziv": "Linz",
+        "broj_stanovnika": 205000
+      }
+    ],
+    "prijevoz": "autobus",
+    "glavni_grad": "Beč",
+    "tip_putovanja": "agencija",
+    "godina_posjete": 2022,
+    "broj_stanovnika": 9113574,
+    "trajanje_putovanja": 3
+  },
+  {
+    "jezik": "češki",
+    "naziv": "Češka",
+    "ocjena": 10,
+    "valuta": "krune",
+    "gradovi": [
+      {
+        "aktivnost": "Koncert",
+        "grad_naziv": "Prag",
+        "broj_stanovnika": 1300000
+      }
+    ],
+    "prijevoz": "autobus",
+    "glavni_grad": "Prag",
+    "tip_putovanja": "samostalno",
+    "godina_posjete": 2025,
+    "broj_stanovnika": 10570801,
+    "trajanje_putovanja": 4
+  }
+]
