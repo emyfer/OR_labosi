@@ -1,8 +1,14 @@
-- licenca: Creative Commons 
-- Ema Bradić
-- verzija 1.0 za 1. labaratorijsku vježbu
-- jezik podataka: hrvatski
-- opis atributa
+### Putovanja
+
+Skup otvorenih podataka na temu posjećenih država
+
+    - licenca: Creative Commons 
+    - Ema Bradić
+    - verzija 1.0 za 1. labaratorijsku vježbu
+    - jezik podataka: hrvatski
+
+### Opis atributa
+
     - drzava:
     - glavni grad:
     - jezik:
