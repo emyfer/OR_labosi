@@ -9,6 +9,7 @@ Skup otvorenih podataka na temu posjećenih država.
 - *broj upisa*: 10
 - *zadnja izmjena*: 20/10/2025.
 - *hijerarshijska struktura*: države(roditelj) -> gradovi(djeca)
+- *format podataka*: CSV i JSON
 - *opis*: skup podataka služi kao osobni putopis i podsjetnik na posjećene država i gradove unutar njih
 
 ### Atributi
