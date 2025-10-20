@@ -7,7 +7,7 @@ Skup otvorenih podataka na temu posjećenih država.
 - *verzija*: 1.0 za 1. labaratorijsku vježbu
 - *jezik podataka*: hrvatski
 - *broj upisa*: 10
-- *zadnja izmjena*:
+- *zadnja izmjena*: 20/10/2025.
 - *hijerarshijska struktura*: države(roditelj) -> gradovi(djeca)
 - *opis*: skup podataka služi kao osobni putopis i podsjetnik na posjećene država i gradove unutar njih
 
