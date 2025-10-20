@@ -7,18 +7,18 @@ Skup otvorenih podataka na temu posjećenih država
 - verzija 1.0 za 1. labaratorijsku vježbu
 - jezik podataka: hrvatski
 
-### Opis atributa
+### Atributi
 
-- drzava:
-- glavni grad:
-- jezik:
+- drzava
+- glavni grad
+- jezik
 - trajanje_putovanja
 - valuta
 - godina posjete
-- tip_putovanja:
+- tip_putovanja: mogućnosti samostalno ili agencijom
 - prijevoz
 - ocjena
 - broj_stanovnika_drzave
 - grad_naziv
 - broj_stanovnika_grada
-- aktivnost:
+- aktivnost: u posjećenom gradu
