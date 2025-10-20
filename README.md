@@ -22,7 +22,7 @@ Skup otvorenih podataka na temu posjećenih država.
 - tip_putovanja: mogućnosti samostalno ili agencijom
 - prijevoz
 - ocjena
-- broj_stanovnika_drzave
+- broj_stanovnika (drzava)
 - grad_naziv
-- broj_stanovnika_grada
+- broj_stanovnika (grad)
 - aktivnost: u posjećenom gradu
