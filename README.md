@@ -1,11 +1,15 @@
 ## Putovanja
 
-Skup otvorenih podataka na temu posjećenih država
+Skup otvorenih podataka na temu posjećenih država. 
 
-- Creative Commons 1.0 license
-- Ema Bradić
-- verzija 1.0 za 1. labaratorijsku vježbu
-- jezik podataka: hrvatski
+- *licenca*: Creative Commons 1.0 license
+- *ime autora*: Ema Bradić
+- *verzija*: 1.0 za 1. labaratorijsku vježbu
+- *jezik podataka*: hrvatski
+- *broj upisa*: 10
+- *zadnja izmjena*:
+- *hijerarshijska struktura*: države(roditelj) -> gradovi(djeca)
+- *opis*: skup podataka služi kao osobni putopis i podsjetnik na posjećene država i gradove unutar njih
 
 ### Atributi
 
