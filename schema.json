@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Posjećene države",
+  "description": "Skup podataka o posjećenim državama i gradovima",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "jezik": {
+        "type": "string",
+        "title": "Jezik",
+        "description": "Službeni ili najrasprostranjeniji jezik koji se govori u državi"
+      },
+      "naziv": {
+        "type": "string",
+        "title": "Država",
+        "description": "Naziv države u kojoj se grad nalazi"
+      },
+      "ocjena": {
+        "type": "number",
+        "title": "Ocjena",
+        "description": "Osobna ocjena dodana putovanju"
+      },
+      "valuta": {
+        "type": "string",
+        "title": "Valuta",
+        "description": "Službena valuta unutar države"
+      },
+      "gradovi": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "aktivnost": {
+                "type": "string",
+                "title": "Aktivnost",
+                "description": "Aktivnost odrađena u posjećenom gradu"
+            },
+            "grad_naziv": {
+                "type": "string",
+                "title": "Posjećeni grad",
+                "description": "Naziv posjećenog grada"
+            },
+            "broj_stanovnika": {
+                "type": "number",
+                "title": "Broj stanovnika grada",
+                "description": "Broj stanovnika grada"
+            }
+          },
+          "required": [
+            "grad_naziv",
+            "broj_stanovnika"
+          ]
+        }
+      },
+      "prijevoz": {
+        "type": "string",
+        "title": "Prijevoz",
+        "description": "Prijevozno sredstvo do države koja je odredište"
+      },
+      "glavni_grad": {
+        "type": "string",
+        "title": "Glavni grad",
+        "description": "Glavni grad posjećene države"
+      },
+      "tip_putovanja": {
+        "type": "string",
+        "title": "Tip putovanja",
+        "description": "(samostalno ili agencijom)"
+      },
+      "godina_posjete": {
+        "type": "number",
+        "title": "Godina posjete",
+        "description": ""
+      },
+      "broj_stanovnika": {
+        "type": "number",
+        "title": "Broj stanovnika države",
+        "description": "Broj stanovnika države"
+      },
+      "trajanje_putovanja": {
+        "type": "number",
+        "title": "Trajanje putovanja",
+        "description": "Broj dana provedenih na putovanju u državi"
+      }
+    },
+    "required": [
+      "jezik",
+      "naziv",
+      "ocjena",
+      "valuta",
+      "gradovi",
+      "prijevoz",
+      "glavni_grad",
+      "tip_putovanja",
+      "godina_posjete",
+      "broj_stanovnika",
+      "trajanje_putovanja"
+    ]
+  }
+}

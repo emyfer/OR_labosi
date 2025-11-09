@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablica podataka</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <h1>Skup posjećenih država</h1>
+
+<form method="GET" action="/datatable" id="filterForm">
+  <div class="controls">
+      <label for="select_filter">Odaberi atribut za filtriranje:</label>
+      <select id="select_filter" name="select_filter">
+          <option value="all" <%= currentSelectFilter === 'all' ? 'selected' : '' %>>Svi atributi</option>
+          <option value="drzava" <%= currentSelectFilter === 'drzava' ? 'selected' : '' %>>Država</option>
+          <option value="jezik" <%= currentSelectFilter === 'jezik' ? 'selected' : '' %>>Jezik</option>
+          <option value="grad_naziv" <%= currentSelectFilter === 'grad_naziv' ? 'selected' : '' %>>Posjećeni grad</option>
+      </select>
+
+      <label for="text_filter">Filtriraj tekstom:</label>
+      <input type="text" id="text_filter" name="filter" placeholder="Tekst koji pretražujete..." value="<%= currentFilter %>">
+
+      <button type="submit">Filtriraj</button>
+      <button type="button" id="download-csv">Preuzmi CSV</button>
+      <button type="button" id="download-json">Preuzmi JSON</button>
+  </div>
+</form>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th>Posjećeni grad</th>
+      <th>Država</th>
+      <th>Glavni grad</th>
+      <th>Jezik</th>
+      <th>Broj stanovnika</th>
+      <th>Trajanje putovanja</th>
+      <th>Valuta</th>
+      <th>Godina posjete</th>
+      <th>Tip putovanja</th>
+      <th>Prijevoz</th>
+      <th>Ocjena</th>
+      <th>Broj stanovnika grada</th>
+      <th>Aktivnost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.forEach(row => { %>
+      <tr>
+        <td><%= row.grad_naziv %></td>
+        <td><%= row.drzava %></td>
+        <td><%= row.glavni_grad %></td>
+        <td><%= row.jezik %></td>
+        <td><%= row.broj_stanovnika %></td>
+        <td><%= row.trajanje_putovanja %></td>
+        <td><%= row.valuta %></td>
+        <td><%= row.godina_posjete %></td>
+        <td><%= row.tip_putovanja %></td>
+        <td><%= row.prijevoz %></td>
+        <td><%= row.ocjena %></td>
+        <td><%= row.broj_stanovnika_grad %></td>
+        <td><%= row.aktivnost %></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<% if (data.length === 0) { %>
+  <p style="text-align: center; margin-top: 20px;">Nema podataka koji odgovaraju filteru.</p>
+<% } %>
+</body>
+</html>
