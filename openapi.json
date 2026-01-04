@@ -1,0 +1,478 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Travel Countries API",
+    "description": "RESTful API za upravljanje državama i gradovima - Laboratorijska vježba Otvoreno računarstvo",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Student FER-a",
+      "email": "student@fer.hr",
+      "url": "https://www.fer.unizg.hr"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    }
+  ],
+  "paths": {
+    "/api/drzave": {
+      "get": {
+        "tags": ["Države"],
+        "summary": "Dohvati sve države",
+        "description": "Vraća listu svih država s pripadajućim gradovima",
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćene države",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["Države"],
+        "summary": "Dodaj novu državu",
+        "description": "Kreira novu državu u sustavu",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DrzavaInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Država uspješno kreirana",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Neispravni podaci",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Država već postoji",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/drzave/{naziv}": {
+      "parameters": [
+        {
+          "name": "naziv",
+          "in": "path",
+          "required": true,
+          "description": "Naziv države",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "tags": ["Države"],
+        "summary": "Dohvati pojedinačnu državu",
+        "description": "Vraća detalje o državi na temelju naziva",
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćena država",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Država nije pronađena",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": ["Države"],
+        "summary": "Ažuriraj državu",
+        "description": "Ažurira postojeću državu",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DrzavaUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Država uspješno ažurirana",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Neispravni podaci",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Država nije pronađena",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Države"],
+        "summary": "Obriši državu",
+        "description": "Briše državu i sve povezane gradove",
+        "responses": {
+          "200": {
+            "description": "Država uspješno obrisana",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Država nije pronađena",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/drzave/tip/{tipPutovanja}": {
+      "get": {
+        "tags": ["Države", "Filtriranje"],
+        "summary": "Dohvati države po tipu putovanja",
+        "description": "Vraća države s određenim tipom putovanja",
+        "parameters": [
+          {
+            "name": "tipPutovanja",
+            "in": "path",
+            "required": true,
+            "description": "Tip putovanja (samostalno, agencija)",
+            "schema": {
+              "type": "string",
+              "enum": ["samostalno", "agencija"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćene države",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Neispravan tip putovanja",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/drzave/jezik/{jezik}": {
+      "get": {
+        "tags": ["Države", "Filtriranje"],
+        "summary": "Dohvati države po jeziku",
+        "description": "Vraća države čiji jezik sadrži zadani niz",
+        "parameters": [
+          {
+            "name": "jezik",
+            "in": "path",
+            "required": true,
+            "description": "Jezik ili dio jezika za pretragu",
+            "schema": {
+              "type": "string",
+              "minLength": 2
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćene države",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parametar prekratak",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/statistika/godina/{godina}": {
+      "get": {
+        "tags": ["Statistika"],
+        "summary": "Dohvati statistiku po godini",
+        "description": "Vraća statistiku država posjećenih u određenoj godini",
+        "parameters": [
+          {
+            "name": "godina",
+            "in": "path",
+            "required": true,
+            "description": "Godina posjete (2000-2030)",
+            "schema": {
+              "type": "integer",
+              "minimum": 2000,
+              "maximum": 2030
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćena statistika",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Neispravna godina",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/docs": {
+      "get": {
+        "tags": ["Dokumentacija"],
+        "summary": "Dohvati OpenAPI specifikaciju",
+        "description": "Vraća OpenAPI specifikaciju API-ja u JSON formatu",
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćena specifikacija",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/data": {
+      "get": {
+        "tags": ["Frontend"],
+        "summary": "Dohvati podatke za frontend",
+        "description": "Vraća podatke za prikaz u datatable (koristi se za postojeći frontend)",
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "required": false,
+            "description": "Tekst za filtriranje",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "select_filter",
+            "in": "query",
+            "required": false,
+            "description": "Stupac za filtriranje (all za sve stupce)",
+            "schema": {
+              "type": "string",
+              "default": "all"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Uspješno dohvaćeni podaci",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Greška na serveru",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
